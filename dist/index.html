@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Multi-Agent System</title>
+    <link rel="stylesheet" href="pure-min.css">
+  </head>
+  <body>
+    <div id="ww-not-supported">Web workers not supported</div>
+    <div id="game" class="hidden pure-g">
+      <h1 id="game-name" class="pure-u-1"></h1>
+      <form class="pure-form pure-u-5-24">
+        <fieldset>
+          <legend>Controls</legend>
+          <button id="start-resume-pause" type="button" class="pure-button pure-button-primary">Start</button>
+          <button id="next-turn" type="button" class="pure-button">Next Turn</button>
+          <button id="reset" type="button" class="pure-button">Reset</button>
+        </fieldset>
+      </form>
+      <div class="pure-u-1-24">&nbsp;</div>
+      <form class="pure-form pure-u-18-24">
+        <fieldset>
+          <legend>Parameters</legend>
+          <div class="pure-u-2-24">
+            <label for="height">Height</label>
+            <input id="height" type="number" class="pure-u-23-24" />
+          </div>
+
+          <div class="pure-u-2-24">
+            <label for="width">Width</label>
+            <input id="width" type="number" class="pure-u-23-24" />
+          </div>
+
+          <div class="pure-u-6-24">
+            <label for="alive-odds">Odds to be alive</label>
+            <input id="alive-odds" type="number" class="pure-u-23-24" />
+          </div>
+
+          <div class="pure-u-6-24">
+            <label for="timeout">Timeout</label>
+            <input id="timeout" type="number" class="pure-u-23-24" />
+          </div>
+
+          <div class="pure-u-4-24">
+            <label for="is-wrap-around">Wrap around</label>
+            <input id="is-wrap-around" type="checkbox" class="pure-u-23-24" />
+          </div>
+        </fieldset>
+      </form>
+      <canvas id="board"></canvas>
+    </div>
+    <script src="ui.js"></script>
+  </body>
+</html>

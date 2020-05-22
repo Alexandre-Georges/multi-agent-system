@@ -1,0 +1,12 @@
+body {
+  margin: 0 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#board {
+  margin: 0 auto 1rem;
+  border: 1px solid grey;
+}
